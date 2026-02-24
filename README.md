@@ -94,5 +94,10 @@ The intelligence of this application is founded upon the well-regarded **PaySim 
 - **The Imbalance Challenge**: Intrinsically reflecting real-world conditions, the dataset exhibits severe class imbalance (approx. 0.13% fraud). The chosen model techniques strictly account for this disparity to avoid high false-negative rates.
 - **Feature Engineering**: Through rigorous feature selection, the application focuses on specific vectors—notably `type`, `amount`, `oldbalanceOrg`, and `newbalanceOrig`—which yield the highest information gain during model training.
 
+## 👤 Developer Details
+- **Name**: Maddula Pavan Veerabhadra Srinaga Gopinadh
+- **Register Number**: 22PA1A0590
+- **Email**: [22pa1a0590@vishnu.edu.in](mailto:22pa1a0590@vishnu.edu.in)
+
 ---
 *Developed for Secure Financial Transaction Initiatives.*
