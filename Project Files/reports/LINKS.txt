@@ -1,0 +1,13 @@
+ONLINE PAYMENTS FRAUD DETECTION - PROJECT LINKS
+
+Dataset Link:
+https://www.kaggle.com/datasets/ealaxi/paysim1
+
+GitHub Repository:
+https://github.com/PavanMaddula/Online-Payments-Fraud-Detection
+
+Project Demo (Local):
+http://127.0.0.1:5000
+
+Report Filename:
+PROJECT_REPORT.md

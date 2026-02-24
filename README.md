@@ -47,17 +47,20 @@ The repository is modularly structured to distinctly separate production source 
 
 ```text
 online payments fraud detection/
-├── data/
-│   └── PS_20174392719_logs.csv      # Financial dataset logs.
-├── flask/                           # Production Web Application Files.
-│   ├── templates/                   # HTML structure files (Jinja2).
-│   ├── app.py                       # Main Flask server and prediction logic.
-│   ├── payments.pkl                 # Serialized ML model for production.
-│   └── label_encoder.pkl            # Serialized encoder for transaction types.
-├── training/                        # Machine Learning Development.
-│   ├── train_model.py               # Script for model comparison and training.
-│   └── ONLINE PAYMENTS...ipynb      # EDA and complete training pipeline notebook.
-├── PROJECT_REPORT.md                # Comprehensive project documentation.
+├── Project Files/
+│   ├── data/                        # Financial dataset logs.
+│   ├── flask/                       # Production Web Application Files.
+│   │   ├── templates/               # HTML structure files (Jinja2).
+│   │   ├── app.py                   # Main Flask server and prediction logic.
+│   │   ├── payments.pkl             # Serialized ML model for production.
+│   │   └── label_encoder.pkl        # Serialized encoder for transaction types.
+│   ├── training/                    # Machine Learning Development.
+│   │   ├── train_model.py           # Script for model comparison and training.
+│   │   └── ONLINE PAYMENTS...ipynb  # EDA and complete training pipeline notebook.
+│   ├── graphs/                      # Visualization and analytics assets.
+│   └── reports/                     # Formal documentation and blueprints.
+│       ├── PROJECT_REPORT.md        # Comprehensive project report.
+│       └── LINKS.txt                # External resources and dataset links.
 ├── requirements.txt                 # Project dependency definitions.
 └── README.md                        # Project overview and guide (this document).
 ```
