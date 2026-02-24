@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuardPay | AI Fraud Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #ec4899;
+            --bg: #0f172a;
+            --text: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(236, 72, 153, 0.1), transparent);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #818cf8, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .btn-container {
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 30px -10px rgba(99, 102, 241, 0.6);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 3rem;
+            margin-top: 4rem;
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .stat h3 { color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem; }
+        .stat p { font-size: 0.9rem; margin-bottom: 0; color: #64748b; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>GuardPay AI</h1>
+        <p>Real-time machine learning fraud detection for online payments. Secure your transactions with cutting-edge predictive analysis.</p>
+        
+        <div class="btn-container">
+            <a href="/predict_page" class="btn">Launch Detection Engine</a>
+        </div>
+
+        <div class="glass-card">
+            <div class="stat">
+                <h3>99.9%</h3>
+                <p>Detection Accuracy</p>
+            </div>
+            <div class="stat">
+                <h3>< 50ms</h3>
+                <p>Latency</p>
+            </div>
+            <div class="stat">
+                <h3>Real-time</h3>
+                <p>Monitoring</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
